@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VOYA — Intelligent luxury expeditions, handcrafted itineraries, and exclusive global travel experiences across the world's most untamed destinations.">
+  <meta name="keywords" content="luxury travel, eco-tourism, adventure expeditions, curated itineraries, private travel concierge, global destinations">
+  <meta name="theme-color" content="#060913">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="VOYA — Intelligent Global Expeditions & Luxury Travel">
+  <meta property="og:description" content="Discover the untamed world beyond boundaries with bespoke luxury itineraries and 24/7 private concierge.">
+  <meta property="og:type" content="website">
+
+  <title>VOYA — Luxury Travel & Intelligent Global Expeditions</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="bg-mesh-glow" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="#" class="brand-logo" id="logo-link">
+          <div class="logo-symbol">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+          </div>
+          <span class="brand-name">VOYA<span>.</span></span>
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#destinations" class="nav-link active">Destinations</a></li>
+          <li><a href="#planner" class="nav-link">AI Itinerary</a></li>
+          <li><a href="#experiences" class="nav-link">Experiences</a></li>
+          <li><a href="#hotspots" class="nav-link">Global Map</a></li>
+          <li><a href="#why-us" class="nav-link">Why Voya</a></li>
+          <li><a href="#reviews" class="nav-link">Stories</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Theme Toggle Button -->
+          <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle Theme">
+            <svg id="theme-icon-sun" style="display: none;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg id="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <label for="currency-select" class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;">Currency</label>
+          <select class="currency-select" id="currency-select" aria-label="Select Currency">
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="AUD">AUD (A$)</option>
+            <option value="JPY">JPY (¥)</option>
+          </select>
+
+          <button class="btn btn-primary btn-sm" id="nav-book-btn" onclick="window.openBookingModal('dest-maldives')">
+            Plan a Trip
+          </button>
+
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>Voted #1 Curated Luxury Travel Platform 2026</span>
+            </div>
+
+            <h1 class="hero-title">
+              Discover the <span class="text-gradient">Untamed World</span> Beyond Boundaries.
+            </h1>
+
+            <p class="hero-subtitle">
+              Bespoke expeditions, private sanctuaries, and hyper-personalized itineraries designed by AI and perfected by local master guides.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#destinations" class="btn btn-primary btn-lg" id="hero-explore-btn">
+                Explore Expeditions
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#planner" class="btn btn-secondary btn-lg" id="hero-ai-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+                Design with AI
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number">180<span>+</span></div>
+                <div class="stat-label">Pristine Destinations</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">4.98<span>★</span></div>
+                <div class="stat-label">Explorer Rating</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100<span>%</span></div>
+                <div class="stat-label">Carbon Neutral</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Vector Illustration Artwork -->
+          <div class="hero-visual-card">
+            <div class="hero-vector-canvas">
+              <svg viewBox="0 0 500 380" class="svg-vector-scene" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="hero-sky-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#09132c" />
+                    <stop offset="45%" stop-color="#152549" />
+                    <stop offset="85%" stop-color="#38bdf8" />
+                    <stop offset="100%" stop-color="#fdba74" />
+                  </linearGradient>
+                  <linearGradient id="hero-water-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#00f2c3" />
+                    <stop offset="60%" stop-color="#0284c7" />
+                    <stop offset="100%" stop-color="#082f49" />
+                  </linearGradient>
+                </defs>
+                <!-- Sky -->
+                <rect width="500" height="260" fill="url(#hero-sky-grad)" />
+                <!-- Sun -->
+                <circle cx="340" cy="220" r="50" fill="#fef08a" opacity="0.95" />
+                <circle cx="340" cy="220" r="70" fill="#fef08a" opacity="0.25" />
+                <!-- Distant Mountains -->
+                <polygon points="0,260 90,140 190,260" fill="#1e293b" opacity="0.8" />
+                <polygon points="120,260 250,110 380,260" fill="#0f172a" opacity="0.9" />
+                <polygon points="230,135 250,110 270,135 255,145 245,140" fill="#f8fafc" />
+                <polygon points="310,260 410,150 500,260" fill="#1e293b" opacity="0.75" />
+                <!-- Water Surface -->
+                <rect y="250" width="500" height="130" fill="url(#hero-water-grad)" />
+                <!-- Luxury Yacht Silhouette -->
+                <polygon points="280,265 370,265 350,285 270,285" fill="#ffffff" />
+                <rect x="295" y="252" width="45" height="14" rx="2" fill="#0f172a" />
+                <line x1="320" y1="240" x2="320" y2="252" stroke="#ffffff" stroke-width="2" />
+                <!-- Flying birds / plane vector -->
+                <path d="M120,80 Q130,70 140,80 Q150,70 160,80" stroke="#f8fafc" stroke-width="2" fill="none" opacity="0.8" />
+                <path d="M160,105 Q168,97 176,105 Q184,97 192,105" stroke="#f8fafc" stroke-width="1.5" fill="none" opacity="0.6" />
+              </svg>
+
+              <!-- Floating Live Tags -->
+              <div class="floating-badge-top">
+                <span class="live-dot"></span>
+                <span>Active Route: Swiss Alps Glacier Flight</span>
+              </div>
+
+              <div class="floating-badge-bottom">
+                <div style="width: 34px; height: 34px; border-radius: 50%; background: var(--gradient-brand); display: flex; align-items: center; justify-content: center; color: #060913; font-weight: 800;">
+                  ✓
+                </div>
+                <div>
+                  <div style="font-size: 0.85rem; font-weight: 700;">Private Concierge Assigned</div>
+                  <div style="font-size: 0.7rem; color: var(--text-muted);">Average response time: &lt; 2 mins</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOATING SEARCH & BOOKING BAR -->
+    <div class="container search-widget-container">
+      <form class="search-widget" id="hero-search-form">
+        <div class="search-field">
+          <label class="search-label" for="search-dest-input">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Destination / Region
+          </label>
+          <input type="text" id="search-dest-input" class="search-input" placeholder="e.g. Bora Bora, Swiss Alps, Kyoto..." />
+        </div>
+
+        <div class="search-field">
+          <label class="search-label" for="search-style-select">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            Travel Style
+          </label>
+          <select id="search-style-select" class="search-select">
+            <option value="all">All Styles</option>
+            <option value="tropical">Tropical & Islands</option>
+            <option value="mountain">Alpine & Mountain</option>
+            <option value="heritage">Heritage & Zen</option>
+            <option value="wildlife">Safari & Savanna</option>
+            <option value="arctic">Arctic & Aurora</option>
+          </select>
+        </div>
+
+        <div class="search-field">
+          <label class="search-label" for="search-date-input">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Travel Window
+          </label>
+          <input type="text" id="search-date-input" class="search-input" placeholder="Autumn 2026 / Flexible" />
+        </div>
+
+        <div class="search-field">
+          <label class="search-label" for="search-guests-select">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            Travelers
+          </label>
+          <select id="search-guests-select" class="search-select">
+            <option value="2">2 Guests (Couple / Duo)</option>
+            <option value="1">1 Solo Explorer</option>
+            <option value="4">Small Group (4-6)</option>
+            <option value="8">VIP Private Charter (8+)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" id="search-submit-btn">
+          Find Journeys
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- DESTINATIONS EXPLORER -->
+    <section class="destinations-section" id="destinations">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Curated Sanctuaries</span>
+          <h2 class="section-title">Iconic Expeditions for 2026</h2>
+          <p class="section-desc">Handcrafted luxury packages with secluded villas, private charter access, and immersive cultural privileges.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-category="all">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            All Expeditions
+          </button>
+          <button class="filter-btn" data-category="tropical">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            Tropical Islands
+          </button>
+          <button class="filter-btn" data-category="mountain">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="8 20 12 13 16 20"></polygon><polygon points="12 20 17 11 22 20"></polygon></svg>
+            Alpine Peaks
+          </button>
+          <button class="filter-btn" data-category="heritage">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3l2-4h14l2 4"></path></svg>
+            Cultural & Zen
+          </button>
+          <button class="filter-btn" data-category="wildlife">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+            Wildlife Safari
+          </button>
+          <button class="filter-btn" data-category="arctic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"></path></svg>
+            Arctic Aurora
+          </button>
+        </div>
+
+        <!-- Grid Container rendered by JS -->
+        <div class="destinations-grid" id="destinations-grid"></div>
+      </div>
+    </section>
+
+    <!-- AI ITINERARY GENERATOR / INTERACTIVE WIZARD -->
+    <section class="planner-section" id="planner">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-purple">Intelligent Engine</span>
+          <h2 class="section-title">Interactive AI Itinerary Builder</h2>
+          <p class="section-desc">Select your desired travel rhythm, duration, and interests to generate a live bespoke itinerary outline.</p>
+        </div>
+
+        <div class="planner-container">
+          <!-- Left Controls -->
+          <div class="planner-controls">
+            <div>
+              <div class="wizard-step-title">
+                <span class="step-num">1</span>
+                <span>Select Your Expedition Vibe</span>
+              </div>
+              <div class="style-selector-grid">
+                <div class="style-choice active" data-style="alpine">
+                  <div class="style-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 20 12 4 21 20"></polygon></svg>
+                  </div>
+                  <div>
+                    <div class="style-title">Alpine & Peaks</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted);">Glaciers, hiking, fondue</div>
+                  </div>
+                </div>
+
+                <div class="style-choice" data-style="tropical">
+                  <div class="style-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                  </div>
+                  <div>
+                    <div class="style-title">Lagoon & Islands</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted);">Overwater, diving, yacht</div>
+                  </div>
+                </div>
+
+                <div class="style-choice" data-style="cultural">
+                  <div class="style-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  </div>
+                  <div>
+                    <div class="style-title">Heritage & Zen</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted);">Ryokan, tea, temples</div>
+                  </div>
+                </div>
+
+                <div class="style-choice" data-style="wildlife">
+                  <div class="style-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                  </div>
+                  <div>
+                    <div class="style-title">Savanna Safari</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted);">Migration, balloon, glamping</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="range-slider-group">
+              <div class="wizard-step-title">
+                <span class="step-num">2</span>
+                <span>Expedition Duration</span>
+              </div>
+              <div class="slider-labels">
+                <span>Short Escape (3 Days)</span>
+                <span id="planner-duration-val" style="color: var(--accent-teal); font-size: 1.1rem; font-weight: 800;">6 Days</span>
+                <span>Grand Odyssey (14 Days)</span>
+              </div>
+              <input type="range" id="planner-duration-slider" class="custom-slider" min="3" max="14" value="6" />
+            </div>
+
+            <div>
+              <div class="wizard-step-title">
+                <span class="step-num">3</span>
+                <span>Travel Inclusions</span>
+              </div>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <span style="padding: 6px 14px; background: rgba(0,242,195,0.1); border: 1px solid var(--accent-teal); border-radius: var(--radius-full); font-size: 0.8rem; color: var(--accent-teal); font-weight: 600;">✓ Private Helicopter/Seaplane</span>
+                <span style="padding: 6px 14px; background: rgba(0,242,195,0.1); border: 1px solid var(--accent-teal); border-radius: var(--radius-full); font-size: 0.8rem; color: var(--accent-teal); font-weight: 600;">✓ Dedicated 24/7 Concierge</span>
+                <span style="padding: 6px 14px; background: rgba(0,242,195,0.1); border: 1px solid var(--accent-teal); border-radius: var(--radius-full); font-size: 0.8rem; color: var(--accent-teal); font-weight: 600;">✓ Michelin Dining Privileges</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Live Output Card -->
+          <div class="planner-preview">
+            <div class="preview-header">
+              <div>
+                <span class="ai-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  Live AI Generation
+                </span>
+                <h3 style="font-size: 1.2rem; margin-top: 6px;">Curated Timeline Draft</h3>
+              </div>
+              <div style="text-align: right;">
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Est. Package</div>
+                <div id="planner-cost-output" style="font-size: 1.35rem; font-weight: 800; color: var(--accent-teal);">$2,640</div>
+              </div>
+            </div>
+
+            <!-- Dynamic Timeline list rendered by JS -->
+            <div class="itinerary-days-container" id="planner-itinerary-output"></div>
+
+            <div class="preview-footer">
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Includes VIP airport fast-track & luggage transfer</span>
+              <button class="btn btn-primary btn-sm" onclick="window.openBookingModal('dest-swiss')">
+                Lock in this Plan
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED BENTO EXPERIENCES -->
+    <section class="experiences-section" id="experiences">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-orange">Signature Moments</span>
+          <h2 class="section-title">Experiences Beyond the Tourist Map</h2>
+          <p class="section-desc">Rare encounters and thrilling journeys crafted for those who value privacy, wonder, and elegance.</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Card 1: Wide Banner -->
+          <div class="bento-card bento-span-2">
+            <svg class="bento-art-bg" viewBox="0 0 600 300" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="bento-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00f2c3" />
+                  <stop offset="100%" stop-color="#0284c7" />
+                </linearGradient>
+              </defs>
+              <circle cx="500" cy="150" r="180" fill="url(#bento-grad-1)" />
+              <path d="M0,220 Q150,160 300,240 T600,200 L600,300 L0,300 Z" fill="#0b1120" />
+            </svg>
+            <div class="bento-content">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <span class="badge" style="margin-bottom: 10px;">Private Aviation</span>
+              <h3 class="bento-title">Heli-Glacier Champagne Touchdowns</h3>
+              <p class="bento-desc">Board an Airbus H130 private helicopter to land on untouched Alpine ice shelves for an exclusive Dom Pérignon glacier tasting session with your certified mountain guide.</p>
+              <button class="btn btn-secondary btn-sm" onclick="window.openQuickView('dest-swiss')">Explore Flight Paths</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bento-card">
+            <svg class="bento-art-bg" viewBox="0 0 300 300" preserveAspectRatio="none">
+              <circle cx="200" cy="80" r="100" fill="#ea580c" opacity="0.4" />
+            </svg>
+            <div class="bento-content">
+              <div class="bento-icon" style="color: var(--accent-orange); border-color: rgba(255,120,73,0.3); background: rgba(255,120,73,0.1);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                  <path d="M2 12h20"></path>
+                </svg>
+              </div>
+              <span class="badge badge-orange" style="margin-bottom: 10px;">Dawn Ascension</span>
+              <h3 class="bento-title">Cappadocia Sunrise Hot-Air Ballooning</h3>
+              <p class="bento-desc">Float above ancient volcanic fairy chimneys and subterranean cities as dawn paints the Anatolian valleys in amber and gold.</p>
+              <button class="btn btn-secondary btn-sm" onclick="window.openBookingModal('dest-safari')">View Experience</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bento-card">
+            <svg class="bento-art-bg" viewBox="0 0 300 300" preserveAspectRatio="none">
+              <circle cx="100" cy="200" r="90" fill="#a855f7" opacity="0.4" />
+            </svg>
+            <div class="bento-content">
+              <div class="bento-icon" style="color: var(--accent-purple); border-color: rgba(168,85,247,0.3); background: rgba(168,85,247,0.1);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+              </div>
+              <span class="badge badge-purple" style="margin-bottom: 10px;">Deep Ocean</span>
+              <h3 class="bento-title">Bioluminescent Coral Night Dives</h3>
+              <p class="bento-desc">Submerge into sparkling underwater galaxies with ultraviolet torches guided by marine biologists in protected South Pacific lagoons.</p>
+              <button class="btn btn-secondary btn-sm" onclick="window.openQuickView('dest-maldives')">View Dive Details</button>
+            </div>
+          </div>
+
+          <!-- Card 4: Wide Banner -->
+          <div class="bento-card bento-span-2">
+            <svg class="bento-art-bg" viewBox="0 0 600 300" preserveAspectRatio="none">
+              <path d="M0,100 Q150,20 300,90 T600,40 L600,300 L0,300 Z" fill="#00f2c3" opacity="0.15" />
+            </svg>
+            <div class="bento-content">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <span class="badge" style="margin-bottom: 10px;">Sub-Zero Luxury</span>
+              <h3 class="bento-title">Arctic Glass Igloos & Northern Lights Hunting</h3>
+              <p class="bento-desc">Experience 360-degree heated glass panoramic roofs deep inside Norwegian pine valleys, equipped with real-time solar storm alerts and midnight husky sledding.</p>
+              <button class="btn btn-secondary btn-sm" onclick="window.openQuickView('dest-aurora')">Explore Arctic Glamping</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE GLOBAL HOTSPOTS (VECTOR MAP) -->
+    <section class="map-section" id="hotspots">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Global Network</span>
+          <h2 class="section-title">Interactive Sanctuary Matrix</h2>
+          <p class="section-desc">Click on any glowing coordinate pin to view real-time meteorological conditions, seasonal highlights, and route links.</p>
+        </div>
+
+        <div class="map-wrapper">
+          <div class="world-svg-container">
+            <!-- Stylized Global Vector Grid & Continents -->
+            <svg viewBox="0 0 1000 500" class="svg-vector-scene" style="width: 100%; height: 100%;" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <pattern id="grid-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="2" r="1.2" fill="#334155" opacity="0.45" />
+                </pattern>
+                <linearGradient id="continent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1e293b" />
+                  <stop offset="100%" stop-color="#0f172a" />
+                </linearGradient>
+              </defs>
+
+              <rect width="1000" height="500" fill="url(#grid-dots)" />
+
+              <!-- North America -->
+              <path d="M120,80 Q220,70 280,120 Q300,180 240,240 Q180,210 140,150 Z" fill="url(#continent-grad)" stroke="rgba(255,255,255,0.06)" />
+              <!-- South America -->
+              <path d="M260,250 Q360,270 330,380 Q290,440 270,400 Q240,320 260,250 Z" fill="url(#continent-grad)" stroke="rgba(255,255,255,0.06)" />
+              <!-- Europe -->
+              <path d="M460,80 Q560,70 540,150 Q480,180 450,130 Z" fill="url(#continent-grad)" stroke="rgba(255,255,255,0.06)" />
+              <!-- Africa -->
+              <path d="M460,180 Q580,170 590,290 Q540,400 480,350 Q440,260 460,180 Z" fill="url(#continent-grad)" stroke="rgba(255,255,255,0.06)" />
+              <!-- Asia -->
+              <path d="M570,70 Q820,60 850,210 Q740,280 620,200 Q560,140 570,70 Z" fill="url(#continent-grad)" stroke="rgba(255,255,255,0.06)" />
+              <!-- Australia / Oceania -->
+              <path d="M780,310 Q880,300 890,380 Q820,430 760,370 Z" fill="url(#continent-grad)" stroke="rgba(255,255,255,0.06)" />
+
+              <!-- Curved Global Flight Routes -->
+              <path d="M260,160 Q400,60 510,130" stroke="var(--accent-teal)" stroke-width="1.5" stroke-dasharray="4,6" fill="none" opacity="0.6" />
+              <path d="M510,130 Q650,90 800,160" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-dasharray="4,6" fill="none" opacity="0.6" />
+              <path d="M510,130 Q540,260 570,300" stroke="var(--accent-orange)" stroke-width="1.5" stroke-dasharray="4,6" fill="none" opacity="0.6" />
+            </svg>
+
+            <!-- Dynamic Hotspot Pins Container -->
+            <div id="map-hotspots-container" style="position: absolute; top:0; left:0; width:100%; height:100%;"></div>
+          </div>
+
+          <!-- Hotspot Active Info Drawer -->
+          <div class="hotspot-info-box">
+            <div>
+              <div style="font-size: 0.75rem; color: var(--accent-teal); text-transform: uppercase; font-weight: 700;">Selected Sanctuary Coordinate</div>
+              <div id="hotspot-name" style="font-size: 1.3rem; font-weight: 800;">Reykjavik Geysers</div>
+              <div style="font-size: 0.85rem; color: var(--text-secondary);"><span id="hotspot-region">Iceland</span> • <span id="hotspot-temp">11°C</span> • <span id="hotspot-tag">Volcanic Springs</span></div>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="window.openBookingModal('dest-swiss')">
+              Inquire Route Availability
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE VOYA -->
+    <section class="features-section" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">The Voya Standard</span>
+          <h2 class="section-title">Redefining What Travel Can Be</h2>
+          <p class="section-desc">We combine artificial intelligence logistics with human concierge artistry to craft seamless world encounters.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">100% Carbon Neutral</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Every flight, boat charter, and villa stay is matched with verified coral restoration and afforestation carbon credits.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">24/7 Human & AI Concierge</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Never wait on hold. Whether you require a last-minute helicopter diversion or a private chef table, we fulfill it instantly.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Handcrafted Exclusivity</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Access sanctuaries strictly inaccessible to the general public — after-hours museum tours, private atolls, and royal grounds.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="M7 15h0M2 9.5h20"></path>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Zero-Penalty Flex Policy</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Change your travel dates, destinations, or guest lists up to 14 days before departure without penalty fees.</p>
+          </div>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <div class="section-header" id="reviews" style="margin-bottom: 36px;">
+          <span class="badge badge-purple">Verified Travelers</span>
+          <h2 class="section-title">Stories from the Horizon</h2>
+        </div>
+
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">★★★★★</div>
+              <p class="testimonial-text">"Voya planned our 10-year anniversary in Bora Bora. From the moment our seaplane landed at the lagoon, every detail was immaculate. The private sandbank dinner was once in a lifetime."</p>
+            </div>
+            <div class="author-info">
+              <div class="author-avatar-vector">EB</div>
+              <div>
+                <div class="author-name">Elena & Bruce Vance</div>
+                <div class="author-trip">Bora Bora Sanctuary • May 2026</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">★★★★★</div>
+              <p class="testimonial-text">"The AI Itinerary builder gave us an outline in seconds, and our private concierge elevated it into pure art in Zermatt. The private Matterhorn helicopter landing was mesmerizing."</p>
+            </div>
+            <div class="author-info">
+              <div class="author-avatar-vector">MK</div>
+              <div>
+                <div class="author-name">Marcus Sterling</div>
+                <div class="author-trip">Swiss Alps Pinnacle • July 2026</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">★★★★★</div>
+              <p class="testimonial-text">"Seeing the Great Migration in Serengeti with Voya's trackers was transformative. The luxury tented lodge and stargazing telescope sessions left my family speechless."</p>
+            </div>
+            <div class="author-info">
+              <div class="author-avatar-vector">SL</div>
+              <div>
+                <div class="author-name">Sophia Lin, MD</div>
+                <div class="author-trip">Serengeti Savanna • August 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP NEWSLETTER & DEALS BANNER -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner">
+          <svg class="banner-vector-shapes" viewBox="0 0 1000 300" preserveAspectRatio="none">
+            <circle cx="150" cy="50" r="180" fill="var(--accent-teal)" />
+            <circle cx="850" cy="250" r="220" fill="var(--accent-purple)" />
+          </svg>
+
+          <span class="badge" style="margin-bottom: 16px;">Voya Private Club</span>
+          <h2 style="font-size: clamp(2rem, 3.5vw, 2.8rem); margin-bottom: 12px;">Unlock $500 Off Your Inaugural Expedition</h2>
+          <p style="color: var(--text-secondary); max-width: 580px; margin: 0 auto; font-size: 1.05rem;">
+            Join our private newsletter for secret seasonal route releases, complimentary seaplane upgrades, and early access to newly opened private island sanctuaries.
+          </p>
+
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your private email address..." required />
+            <button type="submit" class="btn btn-primary">
+              Claim $500 Voucher
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+            </div>
+            <span class="brand-name">VOYA<span>.</span></span>
+          </a>
+          <p>The global benchmark for intelligent expedition design, sustainable exploration, and ultra-luxury hospitality.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Destinations</h4>
+          <ul class="footer-links">
+            <li><a href="#destinations">French Polynesia</a></li>
+            <li><a href="#destinations">Swiss Alps</a></li>
+            <li><a href="#destinations">Kyoto & Tokyo</a></li>
+            <li><a href="#destinations">Serengeti Safari</a></li>
+            <li><a href="#destinations">Amalfi Coast</a></li>
+            <li><a href="#destinations">Tromsø Aurora</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Platforms & AI</h4>
+          <ul class="footer-links">
+            <li><a href="#planner">AI Itinerary Builder</a></li>
+            <li><a href="#hotspots">Global Sanctuary Map</a></li>
+            <li><a href="#experiences">Signature Experiences</a></li>
+            <li><a href="#why-us">Carbon Neutral Pledge</a></li>
+            <li><a href="#">VIP Private Fleet</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Concierge & Trust</h4>
+          <ul class="footer-links">
+            <li><a href="#">24/7 VIP Assistance</a></li>
+            <li><a href="#">Travel Insurance Tier-1</a></li>
+            <li><a href="#">Privacy & Discretion Charter</a></li>
+            <li><a href="#">Sustainability Report 2026</a></li>
+            <li><a href="#">Terms of Expedition</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 VOYA Global Expeditions Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 18px;">
+          <a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+          <a href="#" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
+          <a href="#" style="color: var(--text-muted); text-decoration: none;">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QUICK VIEW DETAIL MODAL -->
+  <div class="modal-overlay" id="quick-modal" aria-hidden="true" role="dialog">
+    <div class="modal-box">
+      <button class="modal-close" onclick="window.closeModal()" aria-label="Close modal">✕</button>
+      <div id="modal-dynamic-content"></div>
+    </div>
+  </div>
+
+  <!-- BOOKING & CHECKOUT MODAL -->
+  <div class="modal-overlay" id="booking-modal" aria-hidden="true" role="dialog">
+    <div class="modal-box">
+      <button class="modal-close" onclick="window.closeModal()" aria-label="Close modal">✕</button>
+      <div id="booking-dynamic-content"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATIONS CONTAINER -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
